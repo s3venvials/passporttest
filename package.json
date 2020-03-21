@@ -1,0 +1,29 @@
+{
+  "name": "passporttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test_local": "mocha",
+    "test": "mocha --reporter mocha-junit-reporter",
+    "debug": "set NODE_ENV=debug&&node server.js",
+    "dev": "set NODE_ENV=dev&&node server.js",
+    "prod": "set NODE_ENV=prod&&node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongodb-memory-server": "^6.4.1",
+    "mongoose": "^5.9.5",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}
